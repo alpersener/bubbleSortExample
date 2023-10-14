@@ -30,18 +30,21 @@ i=3’de, 5-3=2den küçük olanlar **(0 ve 1.index’e kadar)** kontrol edecekt
 Complexity of Bubble Sort
 -------------------------
 
-`**Best case⇒O(N)’**`**dir**.Best case array sorted olursa gerçekleşir.J değeri tek tek karşılaştırılarak en sona doğru gider sonuç olarak tüm array’i gezmesi gerekir array’in n elemanı olduğu farzedilirse n adım kadar gezip compare etmesi gerekir bundan dolayı O(N)’dir.
+`Best case⇒O(N)’`dir.Best case array sorted olursa gerçekleşir.J değeri tek tek karşılaştırılarak en sona doğru gider sonuç olarak tüm array’i gezmesi gerekir array’in n elemanı olduğu farzedilirse n adım kadar gezip compare etmesi gerekir bundan dolayı O(N)’dir.
 
 Ek olarak array sorted olduğu için j değerleri swap’lamaz bu da onun sorted olduğunu gösterir.
 
-`**Worst case⇒O(N^2)**`**’dir.**Worst case array opposite sorted olursa gerçekleşir örneğin array descending olarak sıralanmış(5,4,3,2,1) bunu ascending olarak istenirse eğer ya da array asceding olarak sıralanıp(1,2,3,4,5) descending olarak istenilirse worst case olmuş olacaktır.
+`Worst case⇒O(N^2)`’dir.**Worst case array opposite sorted olursa gerçekleşir örneğin array descending olarak sıralanmış(5,4,3,2,1) bunu ascending olarak istenirse eğer ya da array asceding olarak sıralanıp(1,2,3,4,5) descending olarak istenilirse worst case olmuş olacaktır.
 
 **Örnek:Swap değerleri aşağıdaki gibi olacak**
 
 ![photo4](https://github.com/alpersener/bubbleSortExample/blob/master/photo4.png)
 
 ![photo5](https://github.com/alpersener/bubbleSortExample/blob/master/photo5.png)
-    package BubbleSort;
+    
+```
+
+package BubbleSort;
     
     import java.util.Arrays;
     
@@ -75,5 +78,7 @@ Ek olarak array sorted olduğu için j değerleri swap’lamaz bu da onun sorted
        }
     
     }
+```
+
 
 *   boolean ifadeyi vermemizin sebebi eğer array sorted ise tekrardan döngüye girip girip durmasın eğer swap yapmayacaksa ki sorted olunca swap yapamaz dursun diye
